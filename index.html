@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Nombres primers</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="fitxer.css" />    
+    <script src="calendari.js"></script>
+</head>
+<body>
+    <script>
+        var dia = prompt ("Introduiex un dia:");
+        var mes = prompt ("Introdueix les tres primeres lletres d'un mes:");
+        var any = prompt ("Introdueix un any:");
+
+        var dia = parseInt(dia);
+        var mes = mes;
+        var any = parseInt(any);
+        var resultat = calcularAlgoritme (dia, mes, any);
+
+        if (resultat == 0) {
+            alert("El dia de la setmana de la data introduida, "+ dia + mes + any + "," + " és diumenge");
+        } else if (resultat == 1) {
+            alert("El dia de la setmana de la data introduida, "+ dia + mes + any + "," + " és dilluns");
+        } else if (resultat == 2) {
+            alert("El dia de la setmana de la data introduida, "+ dia + mes + any + "," + " és dimarts");
+        } else if (resultat == 3) {
+            alert("El dia de la setmana de la data introduida, "+ dia + mes + any + "," + " és dimecres");
+        } else if (resultat == 4) {
+            alert("El dia de la setmana de la data introduida, "+ dia + mes + any + "," + " és dijous");
+        } else if (resultat == 5) {
+            alert("El dia de la setmana de la data introduida, "+ dia + mes + any + "," + " és divendres");
+        } else if (resultat == 6) {
+            alert("El dia de la setmana de la data introduida, "+ dia + mes + any + "," + " és dissabte");
+        } 
+    </script>
+</body>
+</html>
